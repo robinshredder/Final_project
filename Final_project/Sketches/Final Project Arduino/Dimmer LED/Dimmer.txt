@@ -1,0 +1,22 @@
+//Blinking LED
+int ledOne[] = {9,10,11};
+int dimmer = A0;
+int readValue;
+int writeValue;
+
+void setup() {
+  pinMode(dimmer, INPUT);
+  pinMode(ledOne, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int readValue = analogRead(dimmer);
+  delay(500);
+  readValue = map(dimmer, 0, 1023, 0, 255);
+  writeValue = (255./1023.) * readValue;
+  analogWrite(ledOne[0], writeValue);
+  analogWrite(ledOne[1], writeValue);
+  analogWrite(ledOne[2], writeValue);
+  Serial.print(writeValue);
+}
