@@ -1,4 +1,5 @@
-//Blinking LED
+//Control LED:s with the potentiometer as a dimmer
+
 int ledOne[] = {9,10,11}; //Array with the LED pins
 int dimmer = A0; //Potentiometer is attached to this pin
 int readValue;
