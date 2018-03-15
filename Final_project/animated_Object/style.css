@@ -1,0 +1,43 @@
+#contentArea {
+    padding:15% 25%;
+}
+#customBezier {
+    position:relative;
+    top:0;
+    left:0;
+    padding:10% 10%;
+    background-color:black;
+}
+.bulbImg {
+    position:relative;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+}
+.square {
+    width:200px;
+    height:200px;
+    background-color:red;
+}
+.el {
+    background-color: #EE8262;
+    animation-name: color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    0% {
+        background-color: #EE8262;
+    }
+    50% {
+        background-color: #FCDC3B;
+    }
+    75% {
+        background-color: #FF6103;
+    }
+    100% {
+        background-color: #FF4500;
+    }
+}
