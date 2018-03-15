@@ -12,12 +12,12 @@ void setup() {
 }
 
 void loop() {
-  int readValue = analogRead(dimmer);
+  int readValue = analogRead(dimmer); //read the value of the potentiometer
   delay(500);
   readValue = map(dimmer, 0, 1023, 0, 255);
   writeValue = (255./1023.) * readValue;
-  analogWrite(ledOne[0], writeValue);
-  analogWrite(ledOne[1], writeValue);
-  analogWrite(ledOne[2], writeValue);
+  analogWrite(ledOne[0], writeValue); //First LED in the array
+  analogWrite(ledOne[1], writeValue); //Second LED in the array
+  analogWrite(ledOne[2], writeValue); //Third LED in the array
   Serial.print(writeValue);
 }
