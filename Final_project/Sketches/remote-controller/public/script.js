@@ -38,7 +38,7 @@ function ready() {
 
     
 
- //AUDIO ---------------------  
+ //AUDIO not working cross-deviced ---------------------  
 
 if (evt.data == "65") {
       console.log("SOUND1");
@@ -113,7 +113,7 @@ document.addEventListener("keydown", function(event) {
        
      }
 
- //AUDIO ----------------
+ //AUDIO not working cross-deviced ----------------
 
       if (event.keyCode == '65') {
         console.log('SOUND1');
