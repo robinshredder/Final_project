@@ -12,8 +12,6 @@ function dimmer(){
         sliderValue = (output.innerHTML = (slider.value));
         sliderValue /= Math.pow(10, 2);                     // Move decimal sign 2 steps to the left
         output.innerHTML = this.value;
-        window.document.getElementById("contentArea").style.opacity = sliderValue;
+        window.document.getElementById("colorBox").style.opacity = sliderValue;
     };
 }
-
-
