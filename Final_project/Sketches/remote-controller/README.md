@@ -1,5 +1,5 @@
 <h1> Remote controller </h1>
-With this remote controller one can control and change different backgrounds on different devices when connected to web sockets.
+With this remote controller one can control and change different backgrounds with keyboard commands on different devices when connected to web sockets.
 
 <b> Getting Started </b>
 1) Download the package, all files are needed to set up the web socket. 
@@ -12,9 +12,11 @@ You will need to install npm before using the websocket.
 
 Link to npm install: https://docs.npmjs.com/cli/install
 
+Find different keycodes here: https://www.asciitable.com/
+
 <b> Give examples </b>
 
-<u>Received a message</u>
+<u>Receive a message</u>
 
   socket.onmessage = function(evt) {
 
@@ -23,3 +25,23 @@ Link to npm install: https://docs.npmjs.com/cli/install
       console.log("image");
     }
 
+
+<u>Send a message</u>
+
+
+function send(str) {
+
+  socket.send(str);
+}
+
+
+
+<u>By using keydown, activate the event</u>
+document.addEventListener("keydown", function(event) {
+
+
+  if (event.keyCode == 'yourkeycode') {
+    console.log("image");
+       send("image");
+      
+    } 
