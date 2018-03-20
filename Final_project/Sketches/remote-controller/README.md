@@ -16,9 +16,9 @@ Find different keycodes here: https://www.asciitable.com/
 
 <b> Give examples </b>
 
-<u>Receive a message</u>
+    <u>Receive a message</u>
 
-  socket.onmessage = function(evt) {
+     socket.onmessage = function(evt) {
 
     if (evt.data == "image") {
       document.body.style.backgroundImage = "url('insert URL')";
@@ -26,22 +26,23 @@ Find different keycodes here: https://www.asciitable.com/
     }
 
 
-<u>Send a message</u>
+    <u>Send a message</u>
 
 
-function send(str) {
+    function send(str) {
 
-  socket.send(str);
-}
+     socket.send(str);
+    }
 
 
 
 <u>By using keydown, activate the event</u>
-document.addEventListener("keydown", function(event) {
 
+     document.addEventListener("keydown", function(event) {
+  
 
-  if (event.keyCode == 'yourkeycode') {
-    console.log("image");
+     if (event.keyCode == 'yourkeycode') {
+      console.log("image");
        send("image");
       
     } 
