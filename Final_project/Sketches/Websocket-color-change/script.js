@@ -86,3 +86,48 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   
+//Red checkbox
+  checkboxRed.addEventListener('change', function () {
+      if (checkboxRed.checked) {
+        // do this
+        console.log('Red Checked');
+        send('redChecked');
+      } else {
+        // do that
+        console.log('Red not checked');
+        send('redUnchecked');
+
+      };
+  });
+    
+  //Green checkbox
+  
+  checkboxGreen.addEventListener('change', function () {
+      if (checkboxGreen.checked) {
+        // do this
+        console.log('Green Checked');
+        send('greenChecked');
+      } else {
+        // do that
+        console.log('Green not checked');
+        send('greenUnchecked');
+
+      }
+    });
+  
+  
+  //Blue checkbox
+    checkboxBlue.addEventListener('change', function () {
+      if (checkboxBlue.checked) {
+        // do this
+        console.log('Blue Checked');
+        send('blueChecked');
+      } else {
+        // do that
+        console.log('Blue not checked');
+        send('blueUnchecked');
+
+      }
+    });
+  });
+
