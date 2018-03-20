@@ -1,2 +1,0 @@
-The code is a collection of vibration patters made in order to try which one matches our chosen notification sound and in a clear way showcases the connectivity between a Philips Hue Lamp and your phone. 
-Code is unfortunately only runnable on android. 
