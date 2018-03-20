@@ -12,4 +12,14 @@ You will need to install npm before using the websocket.
 
 Link to npm install: https://docs.npmjs.com/cli/install
 
-Give examples
+<b> Give examples </b>
+
+<u>Received a message</u>
+
+  socket.onmessage = function(evt) {
+
+    if (evt.data == "image") {
+      document.body.style.backgroundImage = "url('insert URL')";
+      console.log("image");
+    }
+
