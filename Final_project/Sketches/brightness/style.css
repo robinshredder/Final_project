@@ -1,5 +1,16 @@
+#colorBox {
+    background-color: #ffce01;
+    width:300px;
+    height:300px;
+    margin:auto;
+}
+#demo {
+    display: none;
+}
+
 .slidecontainer {
     width: 100%; /* Width of the outside container */
+    padding-bottom:10%;
 }
 
 /* The slider itself */
