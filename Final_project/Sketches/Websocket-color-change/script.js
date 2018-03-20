@@ -3,7 +3,7 @@ if (document.readyState != 'loading') ready();
 else document.addEventListener('DOMContentLoaded', ready);
 
 
-//Websocket, making sure a color changes happen to everyone viewing the webpage when a checkbox is checked
+//making sure a color change happens to everyone viewing the webpage when a checkbox is checked
 function ready() {
 	const url = 'wss://' + location.host + '/ws';
 	socket = new ReconnectingWebsocket(url);
