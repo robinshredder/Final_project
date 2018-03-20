@@ -16,7 +16,7 @@ Find different keycodes here: https://www.asciitable.com/
 
 <b> Give examples </b>
 
-    <u>Receive a message</u>
+  <u>Receive a message</u>
 
      socket.onmessage = function(evt) {
 
@@ -26,7 +26,7 @@ Find different keycodes here: https://www.asciitable.com/
     }
 
 
-    <u>Send a message</u>
+  <u>Send a message</u>
 
 
     function send(str) {
