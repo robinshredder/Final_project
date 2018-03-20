@@ -25,3 +25,24 @@ function send(str) {
 	socket.send(str);
 }
 
+//Checking if the boxes are checked 
+document.addEventListener('DOMContentLoaded', function () {
+      var checkboxBlack = document.getElementById('Black');
+  var checkboxRed = document.getElementById('Red');
+  var checkboxGreen = document.getElementById('Green');
+    var checkboxBlue = document.getElementById('Blue');
+
+  //Black checkbox
+  checkboxBlack.addEventListener('change', function () {
+      if (checkboxBlack.checked) {
+        // do this
+        console.log('Black Checked');
+        send('blackChecked');
+      } else {
+        // do that
+        console.log('Black not checked');
+        send('blackUnchecked');
+
+      }
+    });
+  
