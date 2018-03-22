@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h2 {
+  color: powderblue;
+}
+body {
+  background-color: rgb(32, 32, 32);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+/*a:hover {
+  color:white;
+} */
+
+#lastMsg {
+  font-family: monospace;
+  overflow: scroll;
+  height: 10rem;
+}
+
+#sendObject {
+  border: 1px solid white;
+  padding: 1rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+/*#sendObject:hover {
+  background-color: white;
+} */
+
+#sentCommands {
+  overflow: scroll;
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid white;
+  background: white;
+}
+#contentArea {
+  padding:5% 5%;
+}
+
+
+#cssproperty {
+  position:relative;
+  top:0;
+  left:0;
+  padding:10% 10%;
+  background-color: rgb(32, 32, 32);
+}
+.cir {
+  background-color: rgb(155, 51, 51);
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.el{
+  background-color: rgb(245, 230, 13);
+ /* animation-name: color; */
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {
+      background-color: #EE8262;
+  }
+  50% {
+      background-color: #FCDC3B;
+  }
+  75% {
+      background-color: #FF6103;
+  }
+  100% {
+      background-color: #FF4500;
+  }
+} 
