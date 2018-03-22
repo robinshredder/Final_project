@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Pulsating Flame</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    
+
+<div class="container">
+  <img src="flame-off.png" class="fadePics">
+  <img src="flame-on.png" class="fadePics">
+  <img src="" class="fadePics">
+</div>
+
+
+
+</style>
+<script>
+var imgIndex = 0;
+
+function fadePics(){
+  var i;
+  var x=  document.getElementsByClassName ("fadePics");
+ for(i=0;i<x.length;i++){
+ x[i].style.opacity = "0";
+ }
+ imgIndex++;
+ if(imgIndex==x.length-1){
+ imgIndex = 0;
+ }
+ 
+ x[imgIndex].style.opacity = "1";
+ 
+ setTimeout(fadePics,1000);
+ 
+}
+fadePics();
+</script>
+
+</body>
+</html>
