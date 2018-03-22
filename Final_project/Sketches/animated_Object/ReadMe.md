@@ -1,3 +1,5 @@
+Animated Object
+
 Author: Robin Schritter
 
 Example is built with the help of animation library animeJS.
