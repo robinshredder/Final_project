@@ -40,7 +40,7 @@ function send(str) {
 
 //Change background color of element
 
-document.addEventListener("onclick", function(event) {
+document.addEventListener("keypress", function(event) {
 //sends string with keyboard input z
 if (event.keyCode == '122') {
     send("colorOne");
