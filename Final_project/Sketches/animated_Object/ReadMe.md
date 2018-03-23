@@ -10,13 +10,13 @@ $ npm install
 then run with 
 $ npm start
 
-To install animejs:
+To install animejs in lib directory:
   Through CLI
 $ npm install animejs
   else download at
   https://github.com/juliangarnier/anime/archive/master.zip
   
-  
+
 
 Code is built to symbolise the feeling of a moving object within an element. 
 
