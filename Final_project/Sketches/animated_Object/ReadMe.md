@@ -2,9 +2,21 @@ Animated Object
 
 Author: Robin Schritter
 
-Example is built with the help of animation library animeJS.
+Example is built with the help of animation library animeJS and run with NPM websockets.
 
-to Run, download at : animejs.com
+To install npm:
+$ npm install
+
+then run with 
+$ npm start
+
+To install animejs:
+  Through CLI
+$ npm install animejs
+  else download at
+  https://github.com/juliangarnier/anime/archive/master.zip
+  
+  
 
 Code is built to symbolise the feeling of a moving object within an element. 
 
