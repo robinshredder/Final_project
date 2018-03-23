@@ -47,11 +47,11 @@ if (event.keyCode == '122') {
 }
 //sends string with keyboard input x
 if (event.keyCode == '120') {
-    send("colorOne");
+    send("colorTwo");
 }
 //sends string with keyboard input c
 if (event.keyCode == '99') {
-    send("colorOne");
+    send("colorThree");
 }
 if (event.keyCode == '13') {
     send("startAnime");
